@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([], function () {
     Route::post('/auth', [ApiController::class, 'auth']);
+    Route::post('/register', [ApiController::class, 'register_user']);
+    Route::post('/asamblea/escudo', [ApiController::class, 'regist_Asamblea_Escudo']);
 });
